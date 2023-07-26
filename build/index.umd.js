@@ -890,8 +890,7 @@
 	            _this.setState({
 	                open: !_this.state.open
 	            }, function() {
-	                console.log("new popover open state: ".concat(_this.props.open));
-	                _this.props.overridePopoverState(_this.state.open);
+	                _this.props.updatePopoverState(_this.state.open);
 	            });
 	        });
 	        return _this;

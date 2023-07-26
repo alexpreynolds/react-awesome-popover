@@ -10,8 +10,7 @@ export default class Popover extends React.Component {
 
 	setOpen = () => {
 		this.setState({ open: !this.state.open }, () => {
-			console.log(`new popover open state: ${this.props.open}`);
-			this.props.overridePopoverState(this.state.open);
+			this.props.updatePopoverState(this.state.open);
 		});
 	};
 	componentDidUpdate(prevProps) {
