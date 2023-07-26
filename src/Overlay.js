@@ -17,7 +17,10 @@ const Overlay = ({ onClose, overlayColor = "rgba(0,0,0,0.5)", zIndex, action, se
 			? {
 					onMouseEnter: setOpen,
 			  }
-			: {};
+			: {
+					onClick: onClick,
+					onTouchEnd: onClick,
+			  };
 
 	return (
 		<div

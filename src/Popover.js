@@ -8,11 +8,11 @@ export default class Popover extends React.Component {
 	state = { open: this.props.open || false };
 	target = React.createRef();
 
-	onOverlayClick = e => {
-		this.props.onOverlayClick && this.props.onOverlayClick(e);
-	};
 	setOpen = () => {
-		this.setState({ open: !this.state.open });
+		this.setState({ open: !this.state.open }, () => {
+			console.log(`new popover open state: ${this.props.open}`);
+			this.props.overridePopoverState(this.state.open);
+		});
 	};
 	componentDidUpdate(prevProps) {
 		if (prevProps.open !== this.props.open) {
@@ -30,7 +30,6 @@ export default class Popover extends React.Component {
 			stopPropagation,
 			onOpen,
 			onClose,
-			onOverlayClick,
 			children,
 			style,
 			overlayColor,
@@ -69,7 +68,6 @@ export default class Popover extends React.Component {
 							preventDefault={preventDefault}
 							stopPropagation={stopPropagation}
 							overlayColor={overlayColor}
-							onClick={e => console.log(`overlay clicked`)}
 							onClose={this.setOpen}
 							zIndex={zIndex}
 							action={action}
