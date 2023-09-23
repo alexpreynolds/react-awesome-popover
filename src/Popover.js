@@ -33,6 +33,7 @@ export default class Popover extends React.Component {
 			style,
 			overlayColor,
 			arrowProps,
+			updatePopoverState,
 			...rest
 		} = props;
 

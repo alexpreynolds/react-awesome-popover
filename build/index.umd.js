@@ -910,7 +910,7 @@
 	            key: "render",
 	            value: function render() {
 	                var props = this.props;
-	                var _props_placement = props.placement, placement = _props_placement === void 0 ? "auto" : _props_placement, _props_arrow = props.arrow, arrow = _props_arrow === void 0 ? true : _props_arrow, _props_action = props.action, action = _props_action === void 0 ? "click" : _props_action, _props_zIndex = props.zIndex, zIndex = _props_zIndex === void 0 ? DEFAULT_ZINDEX : _props_zIndex, preventDefault = props.preventDefault, stopPropagation = props.stopPropagation, onOpen = props.onOpen, onClose = props.onClose, children = props.children, style = props.style, overlayColor = props.overlayColor, arrowProps = props.arrowProps, rest = _object_without_properties$1(props, [
+	                var _props_placement = props.placement, placement = _props_placement === void 0 ? "auto" : _props_placement, _props_arrow = props.arrow, arrow = _props_arrow === void 0 ? true : _props_arrow, _props_action = props.action, action = _props_action === void 0 ? "click" : _props_action, _props_zIndex = props.zIndex, zIndex = _props_zIndex === void 0 ? DEFAULT_ZINDEX : _props_zIndex, preventDefault = props.preventDefault, stopPropagation = props.stopPropagation, onOpen = props.onOpen, onClose = props.onClose, children = props.children, style = props.style, overlayColor = props.overlayColor, arrowProps = props.arrowProps, updatePopoverState = props.updatePopoverState, rest = _object_without_properties$1(props, [
 	                    "placement",
 	                    "arrow",
 	                    "action",
@@ -922,7 +922,8 @@
 	                    "children",
 	                    "style",
 	                    "overlayColor",
-	                    "arrowProps"
+	                    "arrowProps",
+	                    "updatePopoverState"
 	                ]);
 	                var _children = _sliced_to_array(children, 2), target = _children[0], content = _children[1];
 	                return /*#__PURE__*/ React.createElement("div", _object_spread$3({
