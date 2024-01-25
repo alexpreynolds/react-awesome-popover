@@ -608,7 +608,8 @@
 	                    position: "absolute",
 	                    left: 0,
 	                    top: 0,
-	                    zIndex: DEFAULT_ZINDEX + 10
+	                    zIndex: DEFAULT_ZINDEX + 10,
+	                    color: "lightslategray"
 	                };
 	                var positionStyle = position ? position.style : {};
 	                var arrowStyle = position ? position.arrow : {};

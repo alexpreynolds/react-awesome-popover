@@ -302,6 +302,7 @@ export default class Content extends React.Component {
 			left: 0,
 			top: 0,
 			zIndex: DEFAULT_ZINDEX + 10,
+			color: "lightslategray",
 		};
 		const positionStyle = position ? position.style : {};
 		const arrowStyle = position ? position.arrow : {};
