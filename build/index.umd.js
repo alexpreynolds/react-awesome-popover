@@ -444,7 +444,8 @@
 	                    bottomEnd: _object_spread_props(_object_spread$1({}, transform.bottom), {
 	                        top: arrowBottomTop,
 	                        right: arrowTopBottomEnd
-	                    })
+	                    }),
+	                    backgroundColor: "lightslategray"
 	                };
 	                var pos = [
 	                    {

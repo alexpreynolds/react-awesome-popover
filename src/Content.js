@@ -196,6 +196,7 @@ export default class Content extends React.Component {
 				top: arrowBottomTop,
 				right: arrowTopBottomEnd,
 			},
+			backgroundColor: "lightslategray",
 		};
 
 		const pos = [
