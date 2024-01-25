@@ -445,7 +445,7 @@
 	                        top: arrowBottomTop,
 	                        right: arrowTopBottomEnd
 	                    }),
-	                    backgroundColor: "lightslategray"
+	                    color: "lightslategray"
 	                };
 	                var pos = [
 	                    {

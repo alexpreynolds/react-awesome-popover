@@ -1,7 +1,7 @@
 {
   "build/index.umd.js": {
-    "bundled": 40862,
-    "minified": 14207,
+    "bundled": 40852,
+    "minified": 14197,
     "gzipped": 3950
   }
 }
